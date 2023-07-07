@@ -137,3 +137,9 @@ color: #474747;
 font-size: medium;
 
 }
+.wid{
+    padding: 30px 150px;
+}
+.skill-container{
+    display: flex;
+}
