@@ -216,3 +216,40 @@ hr{
 
 }
 /*footer part*/
+footer{
+    display: flex;
+    background: #FFF8F3;
+    margin-top: 100px;
+    padding: 230px 200px;
+    gap: 117px
+    ;
+
+
+}
+.footer-column{
+    width: 50%;
+}
+ .contact input, textarea
+ {
+    display: block;
+    color: #757575; ;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 0px;
+
+ }
+ .box
+ {
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 25px;
+    color: #757575; ;
+    border-radius: 5px;
+    background-color: white
+    ;border: 0px;
+
+ }.social-links{
+    text-align: left;
+ }.social-icon{
+    margin-right: 10px;
+ }
