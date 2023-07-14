@@ -15,7 +15,6 @@ body {
     font-weight: 700;
     width: 150px;
     height: 64px;
-    flex-shrink: 0;
 
 }
 
@@ -31,6 +30,7 @@ nav {
     align-items: center;
     margin: 0px 200px;
 }
+
 
 .nav-title {
     color: #181818;
@@ -52,13 +52,16 @@ nav a {
     text-decoration: none;
     color: #474747;
 }
+.menu-bar{
+    
+}
 
 /* header related style  */
 .header {
     background: #FFF8F3;
-    background-image: url('../images/header_bg.png'),url('../images/developer.png');
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right,top left;
+    background-position: bottom right, top left;
 }
 
 .banner {
@@ -69,6 +72,7 @@ nav a {
 
 .profile-pic {
     width: 500px;
+
 }
 
 .banner-hi {
@@ -207,49 +211,120 @@ main {
     margin-top: 20px;
 
 }
-hr{
+
+hr {
     margin: 30px 0px 0px 0px;
 }
-.downloadCV{
+
+.downloadCV {
     text-align: center;
     margin-top: 69px;
 
 }
+
 /*footer part*/
-footer{
+footer {
     display: flex;
     background: #FFF8F3;
     margin-top: 100px;
     padding: 230px 200px;
-    gap: 117px
-    ;
+    gap: 117px;
 
 
 }
-.footer-column{
+
+.footer-column {
     width: 50%;
 }
- .contact input, textarea
- {
+
+.contact input,
+textarea {
     display: block;
-    color: #757575; ;
+    color: #757575;
+    ;
     border-radius: 5px;
     margin-bottom: 20px;
     border: 0px;
 
- }
- .box
- {
+}
+
+.box {
     display: block;
     margin-bottom: 25px;
     padding: 18px 25px;
-    color: #757575; ;
+    color: #757575;
+    ;
     border-radius: 5px;
-    background-color: white
-    ;border: 0px;
+    background-color: white;
+    border: 0px;
 
- }.social-links{
+}
+
+.social-links {
     text-align: left;
- }.social-icon{
+}
+
+.social-icon {
     margin-right: 10px;
- }
+}
+
+.hide {
+    display: none;
+}
+
+/* responsive making */
+/* for mobile */
+@media screen and (max-width:576px) {
+    .skill-container {
+        display: block;
+    }
+
+    .resume-container {
+
+        display: block;
+        padding: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .about {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .about-info-container {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .banner{
+        display: block;
+        padding: 10px;
+    }
+    nav {
+        width: 100%;
+        display: block;
+        margin: 0px;
+        
+
+    }
+    .banner-text {
+            width: 100%;
+        flex-direction: column;
+    }
+    .header{
+        
+        background-image: none;
+        
+
+    }
+    .profile-pic {
+        width: 100%;
+    }
+}
